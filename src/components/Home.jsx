@@ -1,7 +1,7 @@
 export const Home = () => {
     return(
         <div className="maincontainer">
-            <div className="hometitle">Welcome to Scholify !</div>
+            <h2 className="hometitle">Welcome to Scholify !</h2>
             <div className="geeks"></div>
         </div>
     )
