@@ -26,53 +26,51 @@ export const Flow2 = () => {
       am5themes_Animated.new(root)
     ]);
     
+    
     var data = [{
-      name: "Root",
+      name: "View",
       children: [{
-        name: "NA",
+        name: "TNC",
         children: [{
-          name: "A00",
-          value: 88
+          name: "Sponsor Visits",
+          children: [
+            {name:"Applied",
+            value: 44},
+            {name:"NA",
+            value:44}
+        ]}, {
+          name: "Fol ups",
+          children: [
+            {name:"Applied",
+            value: 44},
+            {name:"NA",
+            value:44}
+        ]
         }, {
-          name: "A01",
-          value: 23
-        }, {
-          name: "A02",
+          name: "Applied",
           value: 25
-        }]
+        },{
+          name: "NA",
+          value:13
+      }]
       }, {
-        name: "REV",
+        name: "BOOK",
         children: [{
-          name: "A00",
+          name: "Applied",
           value: 62
-        }, {
-          name: "B11",
-          value: 4
         }]
       }, {
-        name: "C0",
-        children: [{
-          name: "C20",
-          value: 11
-        }, {
-          name: "C21",
+        name: "Revisited",
+        children: [ {
+          name: "Applied",
           value: 92
         }, {
-          name: "C22",
+          name: "NA",
           value: 17
         }]
       }, {
-        name: "D0",
-        children: [{
-          name: "D30",
-          value: 95
-        }, {
-          name: "D31",
-          value: 84
-        }, {
-          name: "D32",
-          value: 75
-        }]
+        name: "NA",
+        value:50
       }]
     }];
     
@@ -97,6 +95,8 @@ export const Flow2 = () => {
         orientation: "horizontal"
       })
     );
+    
+    
     
     series.data.setAll(data);
     series.set("selectedDataItem", series.dataItems[0]);

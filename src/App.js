@@ -4,7 +4,7 @@ import { Flow } from './components/Flow';
 import { Nav } from './components/Nav';
 import { Flow2 } from './components/Flow2';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import { ListBoard } from './components/ListBoard';
+import  ListBoard from './components/ListBoard';
 import { Home } from './components/Home';
 
 function App() {
